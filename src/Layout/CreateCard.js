@@ -39,7 +39,7 @@ function CreateCard() {
     event.preventDefault();
     createCard(deckId, card);
     setCard(initialCard);
-    navigate(`/decks/${deckId}`);
+    //navigate(`/decks/${deckId}`);
   };
 
   console.log('deck is', deck);
@@ -62,9 +62,13 @@ function CreateCard() {
         </ol>
       </nav>
       <h2>Add Card</h2>
-      <FormCard formData={card} handleChange={handleChange} handleSubmit={handleSubmit}/>
+      <FormCard
+        formData={card}
+        handleChange={handleChange}
+        handleSubmit={handleSubmit}
+      />
       <Link to={`/decks/${deckId}`} className="btn btn-secondary">
-        Cancel
+        Done
       </Link>
       <button type="submit" className="btn btn-primary" onClick={handleSubmit}>
         Submit
