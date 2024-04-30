@@ -13,12 +13,18 @@ Note: Work on this project locally, because Qualified's online IDE and Web Previ
 
 To run the tests, you can run the following command:
 
+```
 npm test
+```
+
 Most of the tests in this project wait for content to load via the API before continuing the test. Before the implementation is complete, the content never loads so the test fails with a timeout. As a result, the tests will initially run slowly. It may take perhaps a minute or more for all the tests run. The tests will speed up as the implementation nears completion.
 
 You can run the application using the following command.
 
+```
 npm start
+```
+
 The start command will start two servers concurrently:
 
 An API server, powered by json-server, running on http://localhost:5000
